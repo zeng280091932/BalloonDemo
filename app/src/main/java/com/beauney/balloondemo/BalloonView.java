@@ -11,9 +11,11 @@ import android.graphics.Path;
 import android.graphics.PointF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
+
+import com.beauney.balloondemo.utils.DisplayUtil;
+
 
 /**
  * @author zengjiantao
@@ -62,11 +64,11 @@ public class BalloonView extends View {
         super.onDraw(canvas);
         canvas.drawBitmap(mBitmap, mLeft, 0, mPaint);
 
-        mEnd.x = mLeft + 52;
+        mEnd.x = mLeft + DisplayUtil.dip2px(getContext(),13);
         mEnd.y = mBitmap.getHeight();
 
-        mControl.x = (mStart.x + mEnd.x) / 2;
-        mControl.y = mStart.y;
+        mControl.x = mEnd.x;
+        mControl.y = mStart.y - DisplayUtil.dip2px(getContext(),5);
 
         mPath.reset();
         mPath.moveTo(mStart.x, mStart.y);
@@ -77,8 +79,8 @@ public class BalloonView extends View {
 
     private void init() {
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mPaint.setColor(Color.RED);
-        mPaint.setStrokeWidth(8);
+        mPaint.setColor(Color.WHITE);
+        mPaint.setStrokeWidth(DisplayUtil.dip2px(getContext(),2));
         mPaint.setStyle(Paint.Style.STROKE);
         mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.balloon);
         mPath = new Path();
