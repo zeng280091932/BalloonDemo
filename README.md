@@ -3,7 +3,7 @@
 
 # 效果展示
 开场动画的综合效果：
-![混合动画效果](https://img-blog.csdnimg.cn/20201005171505558.gif)  
+![混合动画效果](https://img-blog.csdnimg.cn/20201005181109702.gif)  
 分解动画一效果：
 ![分解动画一](https://img-blog.csdnimg.cn/20201005172121367.gif)  
 分解动画二效果：
