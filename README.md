@@ -3,10 +3,13 @@
 
 # 效果展示
 开场动画的综合效果：
+
 ![混合动画效果](https://img-blog.csdnimg.cn/20201005181109702.gif)  
 分解动画一效果：
+
 ![分解动画一](https://img-blog.csdnimg.cn/20201005172121367.gif)  
 分解动画二效果：
+
 ![分解动画二](https://img-blog.csdnimg.cn/20201005174056402.gif)  
 
 # Android架构师全套视频获取：
